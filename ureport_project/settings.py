@@ -34,7 +34,7 @@ for path in paths:
     else:
         sys.path.append(os.path.join(filedir, path))
         
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -247,6 +247,7 @@ INSTALLED_APPS = (
     "message_classifier",
     "maintenance",
     "south",
+    "tastypie",
 )
 
 #SOUTH_MIGRATION_MODULES = {
