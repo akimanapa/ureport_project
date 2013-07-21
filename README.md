@@ -6,14 +6,18 @@ new ureport based on the latest rapidsms 0.13.0 and github.com/nyaruka's httprou
 To setup
 --------
 
-    git clone https://github.com/unicefburundi/ureport-project.git ureport_project
+    git clone https://github.com/srugano/ureport-project.git ureport_project
     cd ureport_project
+    pip install -r requirements/base.txt
+    pip install -r requirements/ibisabwa.txt
     git submodule update --init
+
+Run syncdb:
+
     python manage.py syncdb
-    python manage.py migrate #this throws some errors at the moment
-    python manage.py migrate rapidsms_httprouter
-    python manage.py migrate poll
-    python manage.py migrate rapidsms_script
-    python manage.py migrate rapidsms_xforms
     python manage.py migrate
+
+You should now be able to run the development server:
+
+    python manage.py runserver
 
