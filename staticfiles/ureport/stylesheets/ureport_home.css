@@ -412,12 +412,13 @@ div.why-placeholder span {
 }
 .step_txt{
     color:#7dafc3;
-    min-height: 42px;
+    min-height: 50px;
 }
 .step img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 
