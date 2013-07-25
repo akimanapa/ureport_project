@@ -229,19 +229,19 @@ div.why-placeholder span {
     width: 100%;
 }
 
-.sponsors {
+.sponsors_logos {
     height: 45px;
     background-color: #00aeef;
     color: white;
-    height: 35px;
-    margin-top: 20px;
+    margin-top: 15px;
     padding-left: 50px;
     padding-top: 10px;
 }
 
-.sponsors img {
+.sponsors_logos img {
     vertical-align:top;
     padding-left: 20px;
+    height: 45px;
 }
 
 .footerlinks {
@@ -697,7 +697,7 @@ div#sondages {
 
 #sondages div.news_column {
     float: left;
-    width: 30%;
+    width: 48%;
     margin: 5px;
     height:150px;   
 }
@@ -762,17 +762,16 @@ div#activities {
 
 #activities div.activities_column {
     float: left;
-    width: 30%;
+    width: 48%;
     margin: 5px;
     height:150px;   
 }
 
 #activities div.activities_sep {
 	float:left;
-	height:100%;
+	height:164px;
 	border-left:1px solid #CCCCCC;
 	margin-top:10px;
-	height:140px;
 }
 
 #activities div.activities_column span {

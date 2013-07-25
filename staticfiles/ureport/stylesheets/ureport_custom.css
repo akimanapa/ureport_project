@@ -1,3 +1,17 @@
 .step_1 {
-	position : left;
+	float:  left;
+	width: 33%;
+}
+.step_2 {
+	float:  right;
+	width: 33%;
+}
+.step_3 {
+	float:  left;
+	width: 33%;
+}
+
+.step_4 {
+	float : right;
+	width: 33%;
 }

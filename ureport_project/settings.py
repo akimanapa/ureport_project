@@ -38,17 +38,17 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+     ('Stockman', 'kuristockyrugano@gmail.com'),
 )
 
 MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'ureport_project.db',
-        'USER': '',
-        'PASSWORD': '',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ureport_l',
+        'USER': 'bedou',
+        'PASSWORD': 'Kigabo47**',
         'HOST': '',
         'PORT': '',
     }
@@ -70,6 +70,7 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = True
 
+USSD_ENABLED = True
 # If you set this to False, Django will not format dates, numbers and
 # calendars according to the current locale.
 USE_L10N = True
