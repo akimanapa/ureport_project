@@ -1,7 +1,24 @@
 .step_1 {
 	float:  left;
+<<<<<<< HEAD
 	width: 300px;
 	height:350px;
+=======
+	width: 33%;
+}
+.step_2 {
+	float:  right;
+	width: 33%;
+}
+.step_3 {
+	float:  left;
+	width: 33%;
+}
+
+.step_4 {
+	float : right;
+	width: 33%;
+>>>>>>> 06c6cd3c2d6221cc6a5b8c281cb5fa64d977ebb3
 }
 .step_3 {
 	float:  left;
