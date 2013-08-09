@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.conf.urls import patterns, include, url
 from django.conf.urls.static import static
-from django.views.generic.simple import direct_to_template
+from django.views.generic import TemplateView
 from django.contrib import admin
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import password_change
@@ -42,10 +42,10 @@ urlpatterns = patterns('',
     url(r"^backend/tempo/$", KannelBackendView.as_view(backend_name="tempo")),
 #    url(r"^router/receive/$", KannelBackendView.as_view(backend_name="kan2http")),
 #     url(r'^router/receive/$', CustomHttpBackendView.as_view(backend_name='kan2http')),
-    url(r'^$', direct_to_template, {'template':'ureport/home.html'}, name="new_home"),
-    url(r'^join/$', direct_to_template, {'template':'ureport/how_to_join.html'}),
-    url(r'^media/$', direct_to_template, {'template':'ureport/media.html'}),
-    url(r'^about_ureport/$', direct_to_template, {'template':'ureport/about.html'}),
+    url(r'^$', TemplateView.as_view(template_name='ureport/home.html')),
+    url(r'^join/$', TemplateView.as_view(template_name='ureport/how_to_join.html')),
+    url(r'^media/$', TemplateView.as_view(template_name='ureport/media.html')),
+    url(r'^about_ureport/$', TemplateView.as_view(template_name='ureport/about.html')),
     url(r'^ureport-admin/$', 'ureport.views.ureport_content', {'slug':'ureport_home', 'base_template':'ureport/three-square.html', 'num_columns':3}, name='rapidsms-dashboard'),
 #    url('^accounts/login', 'rapidsms.views.login'),
 #    url('^accounts/logout', 'rapidsms.views.logout'),

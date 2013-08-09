@@ -23,6 +23,8 @@ paths = [
          "rapidsms_message_classifier",
          "rapidsms_auth",
          "rapidsms_maintenance",
+         "rapidsms_migrations",
+         "rapidsms_locmigrations",
          ]
          
 filedir = os.path.dirname(__file__)
@@ -45,10 +47,10 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'ureport_project.db',
-        'USER': '',
-        'PASSWORD': '',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'report',
+        'USER': 'helpdeskadmin',
+        'PASSWORD': 'Kigabo47**',
         'HOST': '',
         'PORT': '',
     }
